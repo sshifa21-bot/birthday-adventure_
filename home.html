@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Birthday Adventure</title>
+<style>
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+  background: black;
+  color: #eaeaea;
+}
+
+a { text-decoration: none; color: #eaeaea; }
+
+h1, h2 { text-align: center; }
+
+#passwordPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+input {
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background: #111;
+  color: white;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover { background: #ccc; }
+
+#mainContent { display: none; padding: 30px; animation: fadeIn 2s ease; }
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+nav a {
+  padding: 12px 20px;
+  border: 1px solid #444;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+nav a:hover { background: #eaeaea; color: black; transform: scale(1.05); }
+
+.letter {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 40px auto;
+  padding: 40px;
+  background: #111;
+  box-shadow: 0 0 30px rgba(255,255,255,0.05);
+}
+
+.letter h2 { text-align: center; margin-bottom: 30px; }
+.letter p { line-height: 1.6; font-size: 16px; margin-bottom: 18px; }
+
+@keyframes fadeIn { from {opacity:0; transform:translateY(20px);} to {opacity:1; transform:translateY(0);} }
+</style>
+</head>
+<body>
+
+<div id="passwordPage">
+  <h1>Welcome 🤍</h1>
+  <p>Enter the password to continue</p>
+  <input type="password" id="passwordInput" placeholder="Password">
+  <button onclick="checkPassword()">Enter</button>
+</div>
+
+<div id="mainContent">
+<h1>My Birthday Adventure 💙</h1>
+
+<nav>
+  <a href="#reasons">27 Reasons Why I Love You</a>
+  <a href="#letters">27 Open Letters</a>
+  <a href="#escape">Mini Escape Room</a>
+</nav>
+
+
