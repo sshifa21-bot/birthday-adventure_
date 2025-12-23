@@ -1,0 +1,105 @@
+<!-- MINI ESCAPE ROOM -->
+<section id="escape" class="letter">
+<h2>Mini Escape Room 🗝️</h2>
+<p>Welcome to your personal adventure! Solve the puzzles to unlock special messages.</p>
+<ol>
+<li>Puzzle 1: Unscramble: <strong>EVLO</strong> → Hint: It’s what I feel for you.</li>
+<li>Puzzle 2: Guess the number: <strong>My birthday month × 2 = ?</strong></li>
+<li>Puzzle 3: Riddle: <em>I am always with you, yet you can’t see me. I bring comfort from afar. What am I?</em></li>
+</ol>
+<p>Each correct answer reveals a hidden message about my love and our memories. Enjoy the adventure!</p>
+<section id="escape" class="letter">
+<h2>Mini Escape Room 🗝️</h2>
+<p>Welcome to your personal adventure! Solve the puzzles to unlock special messages from me 💌</p>
+
+<!-- Puzzle 1 -->
+<div id="puzzle1">
+  <p><strong>Puzzle 1:</strong> Unscramble the word: <em>EVLO</em></p>
+  <input type="text" id="answer1" placeholder="Your answer here">
+  <button onclick="checkPuzzle1()">Unlock Message</button>
+  <p id="msg1" style="color:#d6336c; font-weight:bold;"></p>
+</div>
+
+<!-- Puzzle 2 -->
+<div id="puzzle2" style="margin-top:20px;">
+  <p><strong>Puzzle 2:</strong> Guess the number: <em>My birthday month × 2</em></p>
+  <input type="text" id="answer2" placeholder="Your answer here">
+  <button onclick="checkPuzzle2()">Unlock Message</button>
+  <p id="msg2" style="color:#d6336c; font-weight:bold;"></p>
+</div>
+
+<!-- Puzzle 3 -->
+<div id="puzzle3" style="margin-top:20px;">
+  <p><strong>Puzzle 3:</strong> Riddle: <em>I am always with you, yet you can’t see me. I bring comfort from afar. What am I?</em></p>
+  <input type="text" id="answer3" placeholder="Your answer here">
+  <button onclick="checkPuzzle3()">Unlock Message</button>
+  <p id="msg3" style="color:#d6336c; font-weight:bold;"></p>
+</div>
+
+<!-- Puzzle 4 -->
+<div id="puzzle4" style="margin-top:20px;">
+  <p><strong>Puzzle 4:</strong> Unscramble the letters: <em>EVRENYRAH</em> (Hint: something I feel every day)</p>
+  <input type="text" id="answer4" placeholder="Your answer here">
+  <button onclick="checkPuzzle4()">Unlock Message</button>
+  <p id="msg4" style="color:#d6336c; font-weight:bold;"></p>
+</div>
+
+<!-- Puzzle 5 -->
+<div id="puzzle5" style="margin-top:20px;">
+  <p><strong>Puzzle 5:</strong> Guess the word: <em>Something I love doing with you</em> (Hint: it’s magical)</p>
+  <input type="text" id="answer5" placeholder="Your answer here">
+  <button onclick="checkPuzzle5()">Unlock Message</button>
+  <p id="msg5" style="color:#d6336c; font-weight:bold;"></p>
+</div>
+
+<script>
+function checkPuzzle1() {
+  let ans1 = document.getElementById("answer1").value.toLowerCase().trim();
+  if(ans1 === "love") {
+    document.getElementById("msg1").innerText = "💖 Correct! Love is what I feel for you every single moment. You are my heart.";
+  } else {
+    document.getElementById("msg1").innerText = "💔 Try again!";
+  }
+}
+
+function checkPuzzle2() {
+  let ans2 = document.getElementById("answer2").value.trim();
+  if(ans2 === "6") { // adjust to actual birthday month ×2
+    document.getElementById("msg2").innerText = "🎉 Correct! Every day with you feels like a celebration. You light up my life.";
+  } else {
+    document.getElementById("msg2").innerText = "💔 Not quite, try again!";
+  }
+}
+
+function checkPuzzle3() {
+  let ans3 = document.getElementById("answer3").value.toLowerCase().trim();
+  if(ans3 === "love" || ans3 === "my love") {
+    document.getElementById("msg3").innerText = "💌 Correct! Even from afar, my love is always with you. You’re never alone.";
+  } else {
+    document.getElementById("msg3").innerText = "💔 Nope, think about what’s always with you.";
+  }
+}
+
+function checkPuzzle4() {
+  let ans4 = document.getElementById("answer4").value.toLowerCase().trim();
+  if(ans4 === "adoreyou" || ans4 === "adore you") {
+    document.getElementById("msg4").innerText = "💖 Correct! I adore you more than words can say. You mean everything to me.";
+  } else {
+    document.getElementById("msg4").innerText = "💔 Try again!";
+  }
+}
+
+function checkPuzzle5() {
+  let ans5 = document.getElementById("answer5").value.toLowerCase().trim();
+  if(ans5 === "laugh") {
+    document.getElementById("msg5").innerText = "💌 Correct! I love every moment we laugh together. You make my life magical.";
+  } else {
+    document.getElementById("msg5").innerText = "💔 Nope, think about our happiest moments.";
+  }
+}
+</script>
+</section>
+
+</section>
+
+</div>
